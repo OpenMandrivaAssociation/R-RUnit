@@ -11,6 +11,7 @@ URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_%{version}.tar.gz
 Requires:         R-utils R-methods 
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-utils R-methods
+BuildRequires:    x11-server-xvfb
 
 %description
 R functions implementing a standard Unit Testing framework, with
@@ -28,7 +29,7 @@ test -d %{packname}/src && (cd %{packname}/src; rm -f *.o *.so)
 rm -f %{buildroot}%{rlibdir}/R.css
 
 %check
-%{_bindir}/R CMD check %{packname}
+xvfb-run %{_bindir}/R CMD check %{packname}
 
 %files
 %dir %{rlibdir}/%{packname}
