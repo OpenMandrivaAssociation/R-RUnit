@@ -2,13 +2,13 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          0.4.25
+Version:          0.4.26
 Release:          1
 Summary:          R Unit test framework
 Group:            Sciences/Mathematics
 License:          GPL-2
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/Archive/%{packname}/%{packname}_%{version}.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/%{packname}_%{version}.tar.gz
 Requires:         R-utils R-methods 
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-utils R-methods
 
