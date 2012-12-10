@@ -45,3 +45,13 @@ xvfb-run %{_bindir}/R CMD check %{packname}
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/share
 %{rlibdir}/%{packname}/unitTests
+
+
+%changelog
+* Thu Feb 16 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.4.26-1
++ Revision: 775313
+- Use proper tarball and wrap make check in xvfb-run.
+- Update to latest version
+- Import R-RUnit
+- Import R-RUnit
+
