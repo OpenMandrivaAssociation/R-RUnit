@@ -1,6 +1,8 @@
 %global packname  RUnit
 %global rlibdir  %{_libdir}/R/library
 
+%define debug_package %{nil}
+
 Name:             R-%{packname}
 Version:          0.4.26
 Release:          1
