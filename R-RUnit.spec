@@ -5,7 +5,7 @@
 
 Name:             R-%{packname}
 Version:          0.4.26
-Release:          2
+Release:          3
 Summary:          R Unit test framework
 Group:            Sciences/Mathematics
 License:          GPL-2
